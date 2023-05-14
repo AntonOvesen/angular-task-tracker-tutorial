@@ -1,0 +1,10 @@
+<!-- because we dont have context for the specific task that we need to parse through, we use $event, which should suffice. -->
+<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+<!--*ngFor lets us loop an array. writing loop stuff in ""-->
+<!-- "let is like c# var. this whole thing is like a c# foreach(var task in tasks)"-->
+<app-task-item 
+	*ngFor="let task of tasks" 
+	[task]="task"
+	(onDelete)="deleteTask(task)"
+	(onToggleReminder)="toggleReminder(task)"
+></app-task-item>

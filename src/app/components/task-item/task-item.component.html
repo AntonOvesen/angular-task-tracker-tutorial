@@ -1,0 +1,8 @@
+<!-- [ngClass]="{reminder: task.reminder}" applies the .task.reminder styling if task.reminder is true. -->
+<!-- I dont quite understand the syntax logic here -->
+<div [ngClass]="{reminder: task.reminder}" class="task" (dblclick)="onToggle(task)">
+	<h3>{{ task.text }}
+		<fa-icon (click)="onDeleteClick(task)" [ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon>
+	</h3>
+	<p>{{ task.day }}</p>
+</div>

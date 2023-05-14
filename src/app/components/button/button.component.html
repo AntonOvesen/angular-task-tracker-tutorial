@@ -1,0 +1,10 @@
+<!-- [ngStyle]="{'background-color': color}" lets me introduce styling through a property.-->
+<!-- color is set when button is used elsewhere, and added here as styling to this components button-->
+<!-- (click)="onClick()" binds the button click event to the onClick method in this component -->
+<button 
+    [ngStyle]="{'background-color': color}" 
+    class="btn"
+    (click)="onClick()"
+>
+    {{ text }}
+</button>

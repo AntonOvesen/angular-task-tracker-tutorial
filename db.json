@@ -23,6 +23,12 @@
       "day": "May 14th at 15:00",
       "reminder": false,
       "id": 4
+    },
+    {
+      "id": 4,
+      "text": "Make Minsweeper in Angular",
+      "day": "May 18th at 13:00",
+      "reminder": true
     }
   ]
 }
